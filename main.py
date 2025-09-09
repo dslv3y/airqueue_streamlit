@@ -102,7 +102,7 @@ ax.set_ylim(-0.5, num_desks - 0.5)
 ax.set_yticks(range(num_desks))
 ax.set_xticks(np.arange(0, total_time + 1, 5*(total_time//100+1)))
 ax.set_yticklabels([i+1 for i in range(num_desks)])
-ax.set_xlabel("Time", color="white", fontsize=13)
+ax.set_xlabel("Time [pseudomins]", color="white", fontsize=13)
 ax.set_ylabel("Desk", color="white", fontsize=13)
 ax.set_title("Gantt Chart", color='white', fontsize=15)
 
