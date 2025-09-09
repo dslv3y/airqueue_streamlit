@@ -4,15 +4,19 @@ import matplotlib.pyplot as plt
 import matplotlib.patches as patches
 import heapq
 
-st.title("✈️ Passenger Queue Simulation at Airport Desks ✈️")
+st.title("✈️ Queue Simulation ✈️")
 
 st.markdown(
     """
     This simulation models how passengers are served at airport desks.  
 
+    *Params are in the sudebar! (look at the top left corner)*
+    
     - Each **desk** has its own service time distribution, from which the processing time for incoming passengers is sampled.  
     - Each **passenger** has an individual *speed factor* that modifies their service duration.  
-    - Service time is sampled from the desk’s distribution and scaled by the passenger’s speed factor:  $t = N(\mu_{desk}, \sigma_{desk}) * N(1, speedfactor_{passenger})$
+    - Service time is sampled from the desk’s distribution and scaled by the passenger’s speed factor:
+    
+    $t = N(\mu_{desk}, \sigma_{desk}) * N(1, speedfactor_{passenger})$
     """
 )
 
@@ -27,11 +31,10 @@ with st.sidebar:
     std_range = st.slider("σ [pseudomins]", 0.1, 0.8, (0.2, 0.5))
     col1, col2 = st.columns(2)
     with col1:
-        color1 = st.color_picker("color1", "#3CB6EB")
+        color1 = st.color_picker("Color №1", "#3CB6EB")
     with col2:
-        color2 = st.color_picker("color2", "#FF4B4B")
+        color2 = st.color_picker("Сolor №2", "#FF4B4B")
     colors = [color1, color2]
-
 # --- Generate distributions ---
 desk_time_params = [(np.random.uniform(*mean_range), np.random.uniform(*std_range)) for _ in range(num_desks)]
 passenger_speed_factor = np.clip(np.random.normal(1, speed_factor_std, size=num_passengers), 0.1, None)
