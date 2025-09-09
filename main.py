@@ -77,6 +77,7 @@ for passenger in range(num_passengers):
     heapq.heappush(heap, (end_time, desk))
 
 # --- Total simulation time ---
+st.markdown("### Results")
 total_time = max(end for events in timeline for _, end, _, _ in events)
 average_waiting_time = sum(start for events in timeline for start, _, _, _ in events) / num_passengers
 st.write(f"**Total time:** {total_time:.2f} pseudomins")
