@@ -36,9 +36,9 @@ with st.sidebar:
     st.markdown("#### Desks service time params")
     col_mu, col_sig = st.columns(2)
     with col_mu:
-        mean_range = st.slider("μ [pseudomins]", 5.0, 15.0, (7.0, 12.0))
+        mean_range = st.slider("μ", 5.0, 15.0, (7.0, 12.0))
     with col_sig:
-        std_range = st.slider("σ [pseudomins]", 0.0, 0.8, (0.2, 0.5))
+        std_range = st.slider("σ", 0.0, 0.8, (0.2, 0.5))
 
     st.markdown("#### Plot params")
     col1, col2 = st.columns(2)
