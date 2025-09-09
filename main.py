@@ -37,7 +37,7 @@ with st.sidebar:
     with col_mu:
         mean_range = st.slider("μ [pseudomins]", 5.0, 15.0, (7.0, 12.0))
     with col_sig:
-        std_range = st.slider("σ [pseudomins]", 0.1, 0.8, (0.2, 0.5))
+        std_range = st.slider("σ [pseudomins]", 0.0, 0.8, (0.2, 0.5))
     col1, col2 = st.columns(2)
     with col1:
         color1 = st.color_picker("Color №1", "#3CB6EB")
