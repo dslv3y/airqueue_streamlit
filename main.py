@@ -24,11 +24,12 @@ st.markdown(
 
 # --- Sidebar controls ---
 with st.sidebar:
+    st.markdown("#### General params")
     coln, colm, cols = st.columns(3)
     with coln:
         num_passengers = st.slider("N", 10, 300, 100, 10)
     with colm:
-        num_desks = st.slider("M", 1, 30, 10, 1)
+        num_desks = st.slider("M", 10, 30, 10, 1)
     with cols:
         speed_factor_std = st.slider("Speed σ", 0.0, 0.3, 0.2, 0.1)
 
@@ -43,6 +44,8 @@ with st.sidebar:
         color1 = st.color_picker("Color №1", "#3CB6EB")
     with col2:
         color2 = st.color_picker("Сolor №2", "#FF4B4B")
+
+    st.markdown("#### Plot params")
     colors = [color1, color2]
 
 # --- Generate distributions ---
