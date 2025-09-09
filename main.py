@@ -8,15 +8,15 @@ st.title("✈️ Queue Simulation ✈️")
 
 st.markdown(
     """
-    This simulation models how passengers are served at airport desks.  
+    This simulation models how $N$ passengers are served at $M$ airport desks.  
 
-    *Params are in the sudebar! (look at the top left corner if using phone)*
+    *Params are in the sidebar! (look at the top left corner if using phone)*
     
     - Each **desk** has its own service time distribution, from which the processing time for incoming passengers is sampled.  
     - Each **passenger** has an individual *speed factor* that modifies their service duration.  
     - Service time is sampled from the desk’s distribution and scaled by the passenger’s speed factor:
     
-    $t = N(\mu_{desk}, \sigma_{desk}) * N(1, speedfactor_{passenger})$
+    $t = N(\mu_{desk}, \sigma_{desk}) * N(1, speed_{passenger})$
     """
 )
 
@@ -24,11 +24,11 @@ st.markdown(
 with st.sidebar:
     coln, colm, cols = st.columns(3)
     with coln:
-        num_passengers = st.slider("N of passengers", 10, 300, 100, 10)
+        num_passengers = st.slider("N", 10, 300, 100, 10)
     with colm:
-        num_desks = st.slider("M of desks", 1, 30, 10, 1)
+        num_desks = st.slider("M", 1, 30, 10, 1)
     with cols:
-        speed_factor_std = st.slider("Speed factor std", 0.0, 0.3, 0.2, 0.1)
+        speed_factor_std = st.slider("Speed σ", 0.0, 0.3, 0.2, 0.1)
 
     st.markdown("#### Desks service time params")
     col_mu, col_sig = st.columns(2)
