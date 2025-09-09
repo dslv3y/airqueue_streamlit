@@ -42,6 +42,7 @@ with st.sidebar:
     with col2:
         color2 = st.color_picker("Сolor №2", "#FF4B4B")
     colors = [color1, color2]
+
 # --- Generate distributions ---
 desk_time_params = [(np.random.uniform(*mean_range), np.random.uniform(*std_range)) for _ in range(num_desks)]
 passenger_speed_factor = np.clip(np.random.normal(1, speed_factor_std, size=num_passengers), 0.1, None)
@@ -77,7 +78,9 @@ for passenger in range(num_passengers):
 
 # --- Total simulation time ---
 total_time = max(end for events in timeline for _, end, _, _ in events)
-st.write(f"**Waiting time:** {total_time:.2f} pseudomins")
+average_waiting_time = sum(start for events in timeline for start, _, _, _ in events) / num_passengers
+st.write(f"**Total time:** {total_time:.2f} pseudomins")
+st.write(f"**Average waiting time:** {average_waiting_time:.2f} pseudomins")
 
 # --- Gantt chart ---
 fig, ax = plt.subplots(facecolor='none')
