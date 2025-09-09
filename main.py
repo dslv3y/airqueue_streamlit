@@ -39,13 +39,15 @@ with st.sidebar:
         mean_range = st.slider("μ [pseudomins]", 5.0, 15.0, (7.0, 12.0))
     with col_sig:
         std_range = st.slider("σ [pseudomins]", 0.0, 0.8, (0.2, 0.5))
+
+    st.markdown("#### Plot params")
     col1, col2 = st.columns(2)
     with col1:
         color1 = st.color_picker("Color №1", "#3CB6EB")
     with col2:
         color2 = st.color_picker("Сolor №2", "#FF4B4B")
 
-    st.markdown("#### Plot params")
+    
     colors = [color1, color2]
 
 # --- Generate distributions ---
