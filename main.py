@@ -10,7 +10,7 @@ st.markdown(
     """
     This simulation models how passengers are served at airport desks.  
 
-    *Params are in the sudebar! (look at the top left corner)*
+    *Params are in the sudebar! (look at the top left corner if using phone)*
     
     - Each **desk** has its own service time distribution, from which the processing time for incoming passengers is sampled.  
     - Each **passenger** has an individual *speed factor* that modifies their service duration.  
@@ -22,13 +22,20 @@ st.markdown(
 
 # --- Sidebar controls ---
 with st.sidebar:
-    num_passengers = st.slider("N of passengers", 10, 300, 100, 10)
-    num_desks = st.slider("M of desks", 1, 30, 10, 1)
-    speed_factor_std = st.slider("Speed factor std", 0.0, 0.3, 0.2, 0.1)
+    coln, colm, cols = st.columns(3)
+    with coln:
+        num_passengers = st.slider("N of passengers", 10, 300, 100, 10)
+    with colm:
+        num_desks = st.slider("M of desks", 1, 30, 10, 1)
+    with cols:
+        speed_factor_std = st.slider("Speed factor std", 0.0, 0.3, 0.2, 0.1)
 
     st.markdown("#### Desks service time params")
-    mean_range = st.slider("μ [pseudomins]", 5.0, 15.0, (7.0, 12.0))
-    std_range = st.slider("σ [pseudomins]", 0.1, 0.8, (0.2, 0.5))
+    col_mu, col_sig = st.columns(2)
+    with col_mu:
+        mean_range = st.slider("μ [pseudomins]", 5.0, 15.0, (7.0, 12.0))
+    with col_sig:
+        std_range = st.slider("σ [pseudomins]", 0.1, 0.8, (0.2, 0.5))
     col1, col2 = st.columns(2)
     with col1:
         color1 = st.color_picker("Color №1", "#3CB6EB")
