@@ -16,7 +16,9 @@ st.markdown(
     - Each **passenger** has an individual *speed factor* that modifies their service duration.  
     - Service time is sampled from the desk’s distribution and scaled by the passenger’s speed factor:
     
-    $t = N(\mu_{desk}, \sigma_{desk}) * N(1, speed_{passenger})$
+    $$
+    t = N(\mu_{desk}, \sigma_{desk}) * N(1, speed_{passenger})
+    $$
     """
 )
 
