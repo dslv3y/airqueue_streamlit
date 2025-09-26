@@ -13,76 +13,76 @@ graph TD
     root_Epigenetics[Epigenetics]
     root_Epigenetics --> root_Epigenetics_ChIP_seq
     root_Epigenetics_ChIP_seq[ChIP_seq]
-    root_Epigenetics --> root_Epigenetics_│   ChIPseq_Geneprofilemd
-    root_Epigenetics_│   ChIPseq_Geneprofilemd[│   ChIPseq_Geneprofile.md]
-    root_Epigenetics --> root_Epigenetics_│   PeakCallingMacs2md
-    root_Epigenetics_│   PeakCallingMacs2md[│   PeakCallingMacs2.md]
-    root_Epigenetics --> root_Epigenetics_│   READMEmd
-    root_Epigenetics_│   READMEmd[│   README.md]
+    root_Epigenetics --> root_Epigenetics_ ChIPseq_Geneprofilemd
+    root_Epigenetics_ ChIPseq_Geneprofilemd[│   ChIPseq_Geneprofile.md]
+    root_Epigenetics --> root_Epigenetics_ PeakCallingMacs2md
+    root_Epigenetics_ PeakCallingMacs2md[│   PeakCallingMacs2.md]
+    root_Epigenetics --> root_Epigenetics_ READMEmd
+    root_Epigenetics_ READMEmd[│   README.md]
     root_Epigenetics --> root_Epigenetics_READMEmd
     root_Epigenetics_READMEmd[README.md]
     root --> root_Evolutionary_theory
     root_Evolutionary_theory[Evolutionary_theory]
     root_Evolutionary_theory --> root_Evolutionary_theory_Foundations_of_evolutionary_biology_PhD_course
     root_Evolutionary_theory_Foundations_of_evolutionary_biology_PhD_course[Foundations_of_evolutionary_biology_PhD_course]
-    root_Evolutionary_theory --> root_Evolutionary_theory_│   Evolutionary_quantitative_geneticsmd
-    root_Evolutionary_theory_│   Evolutionary_quantitative_geneticsmd[│   Evolutionary_quantitative_genetics.md]
-    root_Evolutionary_theory --> root_Evolutionary_theory_│   Genetic_driftmd
-    root_Evolutionary_theory_│   Genetic_driftmd[│   Genetic_drift.md]
-    root_Evolutionary_theory --> root_Evolutionary_theory_│   Interactions_between_selection_and_driftmd
-    root_Evolutionary_theory_│   Interactions_between_selection_and_driftmd[│   Interactions_between_selection_and_drift.md]
-    root_Evolutionary_theory --> root_Evolutionary_theory_│   Pop_structure_and_nonrandom_matingmd
-    root_Evolutionary_theory_│   Pop_structure_and_nonrandom_matingmd[│   Pop_structure_and_nonrandom_mating.md]
-    root_Evolutionary_theory --> root_Evolutionary_theory_│   READMEmd
-    root_Evolutionary_theory_│   READMEmd[│   README.md]
-    root_Evolutionary_theory --> root_Evolutionary_theory_│   Single_locus_natural_selectionmd
-    root_Evolutionary_theory_│   Single_locus_natural_selectionmd[│   Single_locus_natural_selection.md]
-    root_Evolutionary_theory --> root_Evolutionary_theory_│   Two_locus_evolutionmd
-    root_Evolutionary_theory_│   Two_locus_evolutionmd[│   Two_locus_evolution.md]
+    root_Evolutionary_theory --> root_Evolutionary_theory_ Evolutionary_quantitative_geneticsmd
+    root_Evolutionary_theory_ Evolutionary_quantitative_geneticsmd[│   Evolutionary_quantitative_genetics.md]
+    root_Evolutionary_theory --> root_Evolutionary_theory_ Genetic_driftmd
+    root_Evolutionary_theory_ Genetic_driftmd[│   Genetic_drift.md]
+    root_Evolutionary_theory --> root_Evolutionary_theory_ Interactions_between_selection_and_driftmd
+    root_Evolutionary_theory_ Interactions_between_selection_and_driftmd[│   Interactions_between_selection_and_drift.md]
+    root_Evolutionary_theory --> root_Evolutionary_theory_ Pop_structure_and_nonrandom_matingmd
+    root_Evolutionary_theory_ Pop_structure_and_nonrandom_matingmd[│   Pop_structure_and_nonrandom_mating.md]
+    root_Evolutionary_theory --> root_Evolutionary_theory_ READMEmd
+    root_Evolutionary_theory_ READMEmd[│   README.md]
+    root_Evolutionary_theory --> root_Evolutionary_theory_ Single_locus_natural_selectionmd
+    root_Evolutionary_theory_ Single_locus_natural_selectionmd[│   Single_locus_natural_selection.md]
+    root_Evolutionary_theory --> root_Evolutionary_theory_ Two_locus_evolutionmd
+    root_Evolutionary_theory_ Two_locus_evolutionmd[│   Two_locus_evolution.md]
     root_Evolutionary_theory --> root_Evolutionary_theory_READMEmd
     root_Evolutionary_theory_READMEmd[README.md]
     root --> root_Gene_expression_analysis
     root_Gene_expression_analysis[Gene_expression_analysis]
     root_Gene_expression_analysis --> root_Gene_expression_analysis_Bulk
     root_Gene_expression_analysis_Bulk[Bulk]
-    root_Gene_expression_analysis --> root_Gene_expression_analysis_│   DESeq2md
-    root_Gene_expression_analysis_│   DESeq2md[│   DESeq2.md]
-    root_Gene_expression_analysis --> root_Gene_expression_analysis_│   Differential_splicing_analysis
-    root_Gene_expression_analysis_│   Differential_splicing_analysis[│   Differential_splicing_analysis]
-    root_Gene_expression_analysis --> root_Gene_expression_analysis_│   │   Differential_splicing_analysismd
-    root_Gene_expression_analysis_│   │   Differential_splicing_analysismd[│   │   Differential_splicing_analysis.md]
-    root_Gene_expression_analysis --> root_Gene_expression_analysis_│   │   Pie_AS_eventsR
-    root_Gene_expression_analysis_│   │   Pie_AS_eventsR[│   │   Pie_AS_events.R]
-    root_Gene_expression_analysis --> root_Gene_expression_analysis_│   │   Volcano_MA_plotbrainR
-    root_Gene_expression_analysis_│   │   Volcano_MA_plotbrainR[│   │   Volcano_MA_plot-brain.R]
-    root_Gene_expression_analysis --> root_Gene_expression_analysis_│   │   Volcano_MA_plotR
-    root_Gene_expression_analysis_│   │   Volcano_MA_plotR[│   │   Volcano_MA_plot.R]
-    root_Gene_expression_analysis --> root_Gene_expression_analysis_│   │   split_fileR
-    root_Gene_expression_analysis_│   │   split_fileR[│   │   split_file.R]
-    root_Gene_expression_analysis --> root_Gene_expression_analysis_│   Expression_analysis_200bp_windows_no_annotationmd
-    root_Gene_expression_analysis_│   Expression_analysis_200bp_windows_no_annotationmd[│   Expression_analysis_200bp_windows_no_annotation.md]
-    root_Gene_expression_analysis --> root_Gene_expression_analysis_│   KALLISTOmd
-    root_Gene_expression_analysis_│   KALLISTOmd[│   KALLISTO.md]
-    root_Gene_expression_analysis --> root_Gene_expression_analysis_│   KallistoSleuthmd
-    root_Gene_expression_analysis_│   KallistoSleuthmd[│   KallistoSleuth.md]
-    root_Gene_expression_analysis --> root_Gene_expression_analysis_│   NormalizerDEmd
-    root_Gene_expression_analysis_│   NormalizerDEmd[│   NormalizerDE.md]
-    root_Gene_expression_analysis --> root_Gene_expression_analysis_│   READMEmd
-    root_Gene_expression_analysis_│   READMEmd[│   README.md]
-    root_Gene_expression_analysis --> root_Gene_expression_analysis_│   SLEUTHmd
-    root_Gene_expression_analysis_│   SLEUTHmd[│   SLEUTH.md]
-    root_Gene_expression_analysis --> root_Gene_expression_analysis_│   StarDEseq2md
-    root_Gene_expression_analysis_│   StarDEseq2md[│   StarDEseq2.md]
-    root_Gene_expression_analysis --> root_Gene_expression_analysis_│   Transposable_elements
-    root_Gene_expression_analysis_│   Transposable_elements[│   Transposable_elements]
-    root_Gene_expression_analysis --> root_Gene_expression_analysis_│   │   TE_expressionmd
-    root_Gene_expression_analysis_│   │   TE_expressionmd[│   │   TE_expression.md]
-    root_Gene_expression_analysis --> root_Gene_expression_analysis_│   WGCNA_singlesamplemd
-    root_Gene_expression_analysis_│   WGCNA_singlesamplemd[│   WGCNA_singlesample.md]
-    root_Gene_expression_analysis --> root_Gene_expression_analysis_│   edgeR_DE_ASmd
-    root_Gene_expression_analysis_│   edgeR_DE_ASmd[│   edgeR_DE_AS.md]
-    root_Gene_expression_analysis --> root_Gene_expression_analysis_│   normalisation_expressionipynb
-    root_Gene_expression_analysis_│   normalisation_expressionipynb[│   normalisation_expression.ipynb]
+    root_Gene_expression_analysis --> root_Gene_expression_analysis_ DESeq2md
+    root_Gene_expression_analysis_ DESeq2md[│   DESeq2.md]
+    root_Gene_expression_analysis --> root_Gene_expression_analysis_ Differential_splicing_analysis
+    root_Gene_expression_analysis_ Differential_splicing_analysis[│   Differential_splicing_analysis]
+    root_Gene_expression_analysis --> root_Gene_expression_analysis_  Differential_splicing_analysismd
+    root_Gene_expression_analysis_  Differential_splicing_analysismd[│   │   Differential_splicing_analysis.md]
+    root_Gene_expression_analysis --> root_Gene_expression_analysis_  Pie_AS_eventsR
+    root_Gene_expression_analysis_  Pie_AS_eventsR[│   │   Pie_AS_events.R]
+    root_Gene_expression_analysis --> root_Gene_expression_analysis_  Volcano_MA_plotbrainR
+    root_Gene_expression_analysis_  Volcano_MA_plotbrainR[│   │   Volcano_MA_plot-brain.R]
+    root_Gene_expression_analysis --> root_Gene_expression_analysis_  Volcano_MA_plotR
+    root_Gene_expression_analysis_  Volcano_MA_plotR[│   │   Volcano_MA_plot.R]
+    root_Gene_expression_analysis --> root_Gene_expression_analysis_  split_fileR
+    root_Gene_expression_analysis_  split_fileR[│   │   split_file.R]
+    root_Gene_expression_analysis --> root_Gene_expression_analysis_ Expression_analysis_200bp_windows_no_annotationmd
+    root_Gene_expression_analysis_ Expression_analysis_200bp_windows_no_annotationmd[│   Expression_analysis_200bp_windows_no_annotation.md]
+    root_Gene_expression_analysis --> root_Gene_expression_analysis_ KALLISTOmd
+    root_Gene_expression_analysis_ KALLISTOmd[│   KALLISTO.md]
+    root_Gene_expression_analysis --> root_Gene_expression_analysis_ KallistoSleuthmd
+    root_Gene_expression_analysis_ KallistoSleuthmd[│   KallistoSleuth.md]
+    root_Gene_expression_analysis --> root_Gene_expression_analysis_ NormalizerDEmd
+    root_Gene_expression_analysis_ NormalizerDEmd[│   NormalizerDE.md]
+    root_Gene_expression_analysis --> root_Gene_expression_analysis_ READMEmd
+    root_Gene_expression_analysis_ READMEmd[│   README.md]
+    root_Gene_expression_analysis --> root_Gene_expression_analysis_ SLEUTHmd
+    root_Gene_expression_analysis_ SLEUTHmd[│   SLEUTH.md]
+    root_Gene_expression_analysis --> root_Gene_expression_analysis_ StarDEseq2md
+    root_Gene_expression_analysis_ StarDEseq2md[│   StarDEseq2.md]
+    root_Gene_expression_analysis --> root_Gene_expression_analysis_ Transposable_elements
+    root_Gene_expression_analysis_ Transposable_elements[│   Transposable_elements]
+    root_Gene_expression_analysis --> root_Gene_expression_analysis_  TE_expressionmd
+    root_Gene_expression_analysis_  TE_expressionmd[│   │   TE_expression.md]
+    root_Gene_expression_analysis --> root_Gene_expression_analysis_ WGCNA_singlesamplemd
+    root_Gene_expression_analysis_ WGCNA_singlesamplemd[│   WGCNA_singlesample.md]
+    root_Gene_expression_analysis --> root_Gene_expression_analysis_ edgeR_DE_ASmd
+    root_Gene_expression_analysis_ edgeR_DE_ASmd[│   edgeR_DE_AS.md]
+    root_Gene_expression_analysis --> root_Gene_expression_analysis_ normalisation_expressionipynb
+    root_Gene_expression_analysis_ normalisation_expressionipynb[│   normalisation_expression.ipynb]
     root_Gene_expression_analysis --> root_Gene_expression_analysis_READMEmd
     root_Gene_expression_analysis_READMEmd[README.md]
     root_Gene_expression_analysis --> root_Gene_expression_analysis_Single_cell
@@ -115,12 +115,12 @@ graph TD
     root_Genome_or_transcriptome_assembly_BUSCOmd[BUSCO.md]
     root_Genome_or_transcriptome_assembly --> root_Genome_or_transcriptome_assembly_Genome_assembly
     root_Genome_or_transcriptome_assembly_Genome_assembly[Genome_assembly]
-    root_Genome_or_transcriptome_assembly --> root_Genome_or_transcriptome_assembly_│   Megahit_SOAPfusionmd
-    root_Genome_or_transcriptome_assembly_│   Megahit_SOAPfusionmd[│   Megahit_SOAPfusion.md]
-    root_Genome_or_transcriptome_assembly --> root_Genome_or_transcriptome_assembly_│   READMEmd
-    root_Genome_or_transcriptome_assembly_│   READMEmd[│   README.md]
-    root_Genome_or_transcriptome_assembly --> root_Genome_or_transcriptome_assembly_│   SOAPdenovo_GenomeAssemblymd
-    root_Genome_or_transcriptome_assembly_│   SOAPdenovo_GenomeAssemblymd[│   SOAPdenovo_GenomeAssembly.md]
+    root_Genome_or_transcriptome_assembly --> root_Genome_or_transcriptome_assembly_ Megahit_SOAPfusionmd
+    root_Genome_or_transcriptome_assembly_ Megahit_SOAPfusionmd[│   Megahit_SOAPfusion.md]
+    root_Genome_or_transcriptome_assembly --> root_Genome_or_transcriptome_assembly_ READMEmd
+    root_Genome_or_transcriptome_assembly_ READMEmd[│   README.md]
+    root_Genome_or_transcriptome_assembly --> root_Genome_or_transcriptome_assembly_ SOAPdenovo_GenomeAssemblymd
+    root_Genome_or_transcriptome_assembly_ SOAPdenovo_GenomeAssemblymd[│   SOAPdenovo_GenomeAssembly.md]
     root_Genome_or_transcriptome_assembly --> root_Genome_or_transcriptome_assembly_GetORFmd
     root_Genome_or_transcriptome_assembly_GetORFmd[GetORF.md]
     root_Genome_or_transcriptome_assembly --> root_Genome_or_transcriptome_assembly_IsoCollapsemd
@@ -147,38 +147,38 @@ graph TD
     root_Orthology_and_phylogenomics[Orthology_and_phylogenomics]
     root_Orthology_and_phylogenomics --> root_Orthology_and_phylogenomics_Dn_ds
     root_Orthology_and_phylogenomics_Dn_ds[Dn_ds]
-    root_Orthology_and_phylogenomics --> root_Orthology_and_phylogenomics_│   READMEmd
-    root_Orthology_and_phylogenomics_│   READMEmd[│   README.md]
-    root_Orthology_and_phylogenomics --> root_Orthology_and_phylogenomics_│   dNdSmd
-    root_Orthology_and_phylogenomics_│   dNdSmd[│   dNdS.md]
+    root_Orthology_and_phylogenomics --> root_Orthology_and_phylogenomics_ READMEmd
+    root_Orthology_and_phylogenomics_ READMEmd[│   README.md]
+    root_Orthology_and_phylogenomics --> root_Orthology_and_phylogenomics_ dNdSmd
+    root_Orthology_and_phylogenomics_ dNdSmd[│   dNdS.md]
     root_Orthology_and_phylogenomics --> root_Orthology_and_phylogenomics_Phylogenetic_trees
     root_Orthology_and_phylogenomics_Phylogenetic_trees[Phylogenetic_trees]
-    root_Orthology_and_phylogenomics --> root_Orthology_and_phylogenomics_│   DNA_IQtreemd
-    root_Orthology_and_phylogenomics_│   DNA_IQtreemd[│   DNA_IQtree.md]
-    root_Orthology_and_phylogenomics --> root_Orthology_and_phylogenomics_│   Protein_IQtreemd
-    root_Orthology_and_phylogenomics_│   Protein_IQtreemd[│   Protein_IQtree.md]
+    root_Orthology_and_phylogenomics --> root_Orthology_and_phylogenomics_ DNA_IQtreemd
+    root_Orthology_and_phylogenomics_ DNA_IQtreemd[│   DNA_IQtree.md]
+    root_Orthology_and_phylogenomics --> root_Orthology_and_phylogenomics_ Protein_IQtreemd
+    root_Orthology_and_phylogenomics_ Protein_IQtreemd[│   Protein_IQtree.md]
     root_Orthology_and_phylogenomics --> root_Orthology_and_phylogenomics_READMEmd
     root_Orthology_and_phylogenomics_READMEmd[README.md]
     root --> root_Population_and_quantitative_genomics
     root_Population_and_quantitative_genomics[Population_and_quantitative_genomics]
     root_Population_and_quantitative_genomics --> root_Population_and_quantitative_genomics_Filtering
     root_Population_and_quantitative_genomics_Filtering[Filtering]
-    root_Population_and_quantitative_genomics --> root_Population_and_quantitative_genomics_│   LDpruning_plink2md
-    root_Population_and_quantitative_genomics_│   LDpruning_plink2md[│   LDpruning_plink2.md]
-    root_Population_and_quantitative_genomics --> root_Population_and_quantitative_genomics_│   READMEmd
-    root_Population_and_quantitative_genomics_│   READMEmd[│   README.md]
-    root_Population_and_quantitative_genomics --> root_Population_and_quantitative_genomics_│   Sample_and_individual_filtering_plink2md
-    root_Population_and_quantitative_genomics_│   Sample_and_individual_filtering_plink2md[│   Sample_and_individual_filtering_plink2.md]
+    root_Population_and_quantitative_genomics --> root_Population_and_quantitative_genomics_ LDpruning_plink2md
+    root_Population_and_quantitative_genomics_ LDpruning_plink2md[│   LDpruning_plink2.md]
+    root_Population_and_quantitative_genomics --> root_Population_and_quantitative_genomics_ READMEmd
+    root_Population_and_quantitative_genomics_ READMEmd[│   README.md]
+    root_Population_and_quantitative_genomics --> root_Population_and_quantitative_genomics_ Sample_and_individual_filtering_plink2md
+    root_Population_and_quantitative_genomics_ Sample_and_individual_filtering_plink2md[│   Sample_and_individual_filtering_plink2.md]
     root_Population_and_quantitative_genomics --> root_Population_and_quantitative_genomics_Nonsynonymous_synonymous_diversity
     root_Population_and_quantitative_genomics_Nonsynonymous_synonymous_diversity[Nonsynonymous_synonymous_diversity]
-    root_Population_and_quantitative_genomics --> root_Population_and_quantitative_genomics_│   PiAPiS_SNPgenie_RNAseqmd
-    root_Population_and_quantitative_genomics_│   PiAPiS_SNPgenie_RNAseqmd[│   PiAPiS_SNPgenie_RNAseq.md]
+    root_Population_and_quantitative_genomics --> root_Population_and_quantitative_genomics_ PiAPiS_SNPgenie_RNAseqmd
+    root_Population_and_quantitative_genomics_ PiAPiS_SNPgenie_RNAseqmd[│   PiAPiS_SNPgenie_RNAseq.md]
     root_Population_and_quantitative_genomics --> root_Population_and_quantitative_genomics_Population_structure
     root_Population_and_quantitative_genomics_Population_structure[Population_structure]
-    root_Population_and_quantitative_genomics --> root_Population_and_quantitative_genomics_│   Admixturemd
-    root_Population_and_quantitative_genomics_│   Admixturemd[│   Admixture.md]
-    root_Population_and_quantitative_genomics --> root_Population_and_quantitative_genomics_│   Extract_PCs_plink2md
-    root_Population_and_quantitative_genomics_│   Extract_PCs_plink2md[│   Extract_PCs_plink2.md]
+    root_Population_and_quantitative_genomics --> root_Population_and_quantitative_genomics_ Admixturemd
+    root_Population_and_quantitative_genomics_ Admixturemd[│   Admixture.md]
+    root_Population_and_quantitative_genomics --> root_Population_and_quantitative_genomics_ Extract_PCs_plink2md
+    root_Population_and_quantitative_genomics_ Extract_PCs_plink2md[│   Extract_PCs_plink2.md]
     root_Population_and_quantitative_genomics --> root_Population_and_quantitative_genomics_READMEmd
     root_Population_and_quantitative_genomics_READMEmd[README.md]
     root_Population_and_quantitative_genomics --> root_Population_and_quantitative_genomics_SNP_calling
@@ -216,3 +216,4 @@ graph TD
     root --> root_treemd
     root_treemd[tree.md]
     root --> root_28 directories, 84 files
+    root_28 directories, 84 files[28 directories, 84 files]
